@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Инь-Янь — Книги о Китае</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Инь-Янь — на главную">
+        <svg class="logo__svg" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="8" y="12" width="64" height="56" rx="3" fill="#0a0a0a" stroke="#d4af37" stroke-width="1.5"/>
+          <rect x="8" y="12" width="10" height="56" rx="2" fill="#1a1a1a" stroke="#d4af37" stroke-width="1"/>
+          <circle cx="45" cy="40" r="22" fill="#f5f2eb"/>
+          <path d="M45 18 A22 22 0 0 1 45 62 A11 11 0 0 1 45 40 A11 11 0 0 0 45 18Z" fill="#0a0a0a"/>
+          <circle cx="45" cy="29" r="4" fill="#f5f2eb"/>
+          <circle cx="45" cy="51" r="4" fill="#0a0a0a"/>
+          <rect x="66" y="16" width="4" height="20" rx="1" fill="#d4af37"/>
+          <line x1="18" y1="12" x2="18" y2="68" stroke="#d4af37" stroke-width="0.5" opacity="0.4"/>
+        </svg>
+        <span class="logo__text">Инь-Янь</span>
+      </a>
+
+      <nav class="nav" aria-label="Основное меню">
+        <a href="#advantages" class="nav__link">Преимущества</a>
+        <a href="#catalog" class="nav__link">Каталог</a>
+        <a href="#steps" class="nav__link">Как заказать</a>
+        <a href="#team" class="nav__link">Команда</a>
+        <a href="#order" class="nav__link">Заказ</a>
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <label class="cart-btn" aria-label="Открыть корзину">
+          <input type="checkbox" id="cart-panel-open" class="sr-only" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M6 6h15l-1.5 9H7.5L6 6z"/>
+            <circle cx="9" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+            <circle cx="18" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+            <path d="M6 6L5 3H2"/>
+          </svg>
+          <span class="cart-btn__count" aria-live="polite"></span>
+        </label>
+        <label class="burger" aria-label="Меню">
+          <input type="checkbox" id="nav-toggle" class="sr-only" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__tag">Книжная витрина</p>
+          <h1 class="hero__title">Инь-Янь — мир<br>китайской литературы</h1>
+          <p class="hero__desc">Уся, даньмэй, санья и боевые искусства — современные издания для тех, кто ищет путь к пониманию Поднебесной.</p>
+          <a href="#catalog" class="btn btn--primary">Смотреть каталог</a>
+        </div>
+        <div class="hero__symbol" aria-hidden="true">
+          <span class="hero__char">☯</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+      <div class="container">
+        <h2 class="section-title section-title--center">Наши преимущества</h2>
+        <div class="advantages__grid">
+          <article class="advantage-card">
+            <div class="icon-frame">
+              <img src="images/1.webp" alt="Сунь-Цзы. Искусство войны" class="icon-frame__cover" width="120" height="180" loading="lazy">
+            </div>
+            <h3>Проверенные издания</h3>
+            <p>Только авторитетные переводы от ведущих издательств России и мира.</p>
+          </article>
+          <article class="advantage-card">
+            <div class="icon-frame icon-frame--stack">
+              <img src="images/1.webp" alt="Боевые искусства" class="icon-frame__cover icon-frame__cover--back" width="120" height="180" loading="lazy">
+              <img src="images/14.webp" alt="Уся — Книга и меч" class="icon-frame__cover icon-frame__cover--mid" width="120" height="180" loading="lazy">
+              <img src="images/7.webp" alt="Даньмэй — Благословение небожителей" class="icon-frame__cover icon-frame__cover--front" width="120" height="180" loading="lazy">
+            </div>
+            <h3>4 жанра</h3>
+            <p>Уся, боевые искусства, санья и даньмэй — актуальные книги 2020-х годов.</p>
+          </article>
+          <article class="advantage-card">
+            <div class="icon-frame">
+              <img src="images/7.webp" alt="Благословение небожителей" class="icon-frame__cover" width="120" height="180" loading="lazy">
+              <svg class="icon-frame__badge" viewBox="0 0 32 32" aria-hidden="true">
+                <circle cx="16" cy="16" r="15" fill="#0a0a0a" stroke="#d4af37" stroke-width="1.5"/>
+                <path d="M16 8v8l5 3" fill="none" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M22 10a8 8 0 1 1-2.5-5.8" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Удобный заказ</h3>
+            <p>Добавьте книги в корзину и оформите заявку — количество и состав можно изменить перед отправкой.</p>
+          </article>
+          <article class="advantage-card">
+            <div class="icon-frame">
+              <img src="images/5.webp" alt="Хаски и его учитель белый кот" class="icon-frame__cover" width="120" height="180" loading="lazy">
+              <svg class="icon-frame__badge" viewBox="0 0 32 32" aria-hidden="true">
+                <circle cx="16" cy="16" r="15" fill="#0a0a0a" stroke="#d4af37" stroke-width="1.5"/>
+                <path d="M6 20h20M8 20V14h4v6M14 20V11h4v9M20 20V15h4v5" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Быстрая доставка</h3>
+            <p>Отправляем по всей России. Самовывоз из нашего магазина в Москве.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">
+      <span class="divider__symbol">☯</span>
+    </div>
+
+  <section class="html-block" id="html-block" data-custom-block="html">
+      <div class="container">
+        <h2 class="section-title section-title--center">Специальное предложение</h2>
+        <div class="html-block__content" id="htmlBlockContent">
+          <div class="promo-banner">
+            <p class="promo-banner__tag">Акция месяца</p>
+            <h3 class="promo-banner__title">Набор «Мир Мосян Тунсю» — 3 романа со скидкой 15%</h3>
+            <p class="promo-banner__text">«Магистр дьвольского культа», «Благословение небожителей» и  «Система «спаси-себя-сам» для главного злодея» в подарочном оформлении.</p>
+            <a href="#catalog" class="btn btn--primary">Выбрать книги</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <h2 class="section-title">Каталог книг</h2>
+        <input type="radio" name="category" id="filter-all" class="sr-only" checked>
+        <input type="radio" name="category" id="filter-wuxia" class="sr-only">
+        <input type="radio" name="category" id="filter-martial" class="sr-only">
+        <input type="radio" name="category" id="filter-sanxia" class="sr-only">
+        <input type="radio" name="category" id="filter-danmei" class="sr-only">
+        <div class="filters" role="group" aria-label="Фильтр по жанрам">
+          <label for="filter-all" class="filter-btn">Все</label>
+          <label for="filter-wuxia" class="filter-btn">Уся</label>
+          <label for="filter-martial" class="filter-btn">Боевые искусства</label>
+          <label for="filter-sanxia" class="filter-btn">Санься</label>
+          <label for="filter-danmei" class="filter-btn">Даньмэй</label>
+        </div>
+        <div class="catalog__grid">
+          <article class="book-card book-card--1" data-category="martial">
+            <div class="book-card__cover">
+              <img src="images/1.webp" alt="Обложка: Сунь-Цзы. Искусство войны" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Боевые искусства</span>
+              <h3 class="book-card__title">Сунь-Цзы. Искусство войны</h3>
+              <p class="book-card__author">Сунь-Цзы</p>
+              <p class="book-card__desc">Древнекитайский трактат о военной стратегии: тринадцать глав о победе без кровопролития и искусстве управления войсками.</p>
+            <input type="radio" id="book-1-qty-1" name="book-1-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-1-qty-2" name="book-1-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-1-qty-3" name="book-1-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-1-qty-4" name="book-1-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-1-qty-5" name="book-1-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">690 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-1" class="sr-only cart-book" name="books[]" value="Сунь-Цзы. Искусство войны — 690 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-1-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-1-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-1-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-1-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-1-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-1-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-1-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-1-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--2" data-category="martial">
+            <div class="book-card__cover">
+              <img src="images/2.webp" alt="Обложка: Кунг-фу. Формы Шоу-дао" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Боевые искусства</span>
+              <h3 class="book-card__title">Кунг-фу. Формы Шоу-дао. Истоки искусства ниндзя</h3>
+              <p class="book-card__author">Александр Медведев</p>
+              <p class="book-card__desc">Руководство по боевой технике школы Шоу-дао: формы, медитация, приёмы и философия «семейного» клана Шоу.</p>
+            <input type="radio" id="book-2-qty-1" name="book-2-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-2-qty-2" name="book-2-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-2-qty-3" name="book-2-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-2-qty-4" name="book-2-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-2-qty-5" name="book-2-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">780 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-2" class="sr-only cart-book" name="books[]" value="Кунг-фу. Формы Шоу-дао. Истоки искусства ниндзя — 780 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-2-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-2-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-2-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-2-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-2-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-2-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-2-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-2-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--3" data-category="martial">
+            <div class="book-card__cover">
+              <img src="images/3.webp" alt="Обложка: Боевое искусство Шаолиня" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Боевые искусства</span>
+              <h3 class="book-card__title">Боевое искусство Шаолиня</h3>
+              <p class="book-card__author">Максим Петров</p>
+              <p class="book-card__desc">История, теория и практика шаолиньского ушу по китайским источникам — от базовых комплексов до подготовки к поединкам.</p>
+            <input type="radio" id="book-3-qty-1" name="book-3-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-3-qty-2" name="book-3-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-3-qty-3" name="book-3-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-3-qty-4" name="book-3-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-3-qty-5" name="book-3-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">850 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-3" class="sr-only cart-book" name="books[]" value="Боевое искусство Шаолиня — 850 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-3-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-3-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-3-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-3-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-3-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-3-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-3-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-3-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--4" data-category="martial">
+            <div class="book-card__cover">
+              <img src="images/4.webp" alt="Обложка: Оружие Китая" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Боевые искусства</span>
+              <h3 class="book-card__title">Оружие Китая</h3>
+              <p class="book-card__author">Эдвард Вернер</p>
+              <p class="book-card__desc">Исследование традиционного китайского вооружения: мечи, копья, луки, доспехи и их применение в бою по древним трактатам.</p>
+            <input type="radio" id="book-4-qty-1" name="book-4-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-4-qty-2" name="book-4-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-4-qty-3" name="book-4-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-4-qty-4" name="book-4-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-4-qty-5" name="book-4-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">720 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-4" class="sr-only cart-book" name="books[]" value="Оружие Китая — 720 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-4-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-4-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-4-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-4-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-4-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-4-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-4-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-4-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--5" data-category="danmei">
+            <div class="book-card__cover">
+              <img src="images/5.webp" alt="Обложка: Хаски и его учитель белый кот" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Даньмэй</span>
+              <h3 class="book-card__title">Хаски и его учитель белый кот</h3>
+              <p class="book-card__author">Жоубао Бучи Жоу</p>
+              <p class="book-card__desc">Тиран Тасянь-цзюнь получает второй шанс в прошлом и пытается изменить судьбу и отношения с наставником Чу Ваньнином.</p>
+            <input type="radio" id="book-5-qty-1" name="book-5-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-5-qty-2" name="book-5-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-5-qty-3" name="book-5-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-5-qty-4" name="book-5-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-5-qty-5" name="book-5-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">1100 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-5" class="sr-only cart-book" name="books[]" value="Хаски и его учитель белый кот — 1100 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-5" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-5-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-5-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-5-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-5-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-5-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-5-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-5-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-5-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--6" data-category="danmei">
+            <div class="book-card__cover">
+              <img src="images/6.webp" alt="Обложка: Основатель темного пути" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Даньмэй</span>
+              <h3 class="book-card__title">Основатель темного пути</h3>
+              <p class="book-card__author">Мо Сянь Тунсю</p>
+              <p class="book-card__desc">Вэй Усянь возвращается к жизни спустя 13 лет и вновь сталкивается с кланами культиваторов и тайнами своего прошлого.</p>
+            <input type="radio" id="book-6-qty-1" name="book-6-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-6-qty-2" name="book-6-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-6-qty-3" name="book-6-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-6-qty-4" name="book-6-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-6-qty-5" name="book-6-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">1190 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-6" class="sr-only cart-book" name="books[]" value="Основатель темного пути — 1190 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-6" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-6-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-6-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-6-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-6-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-6-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-6-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-6-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-6-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--7" data-category="danmei">
+            <div class="book-card__cover">
+              <img src="images/7.webp" alt="Обложка: Благословение небожителей" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Даньмэй</span>
+              <h3 class="book-card__title">Благословение небожителей</h3>
+              <p class="book-card__author">Мо Сянь Тунсю</p>
+              <p class="book-card__desc">Эпическая сянься-история о боге, дважды восходившем на небеса, и демоне, который всегда приходит ему на помощь.</p>
+            <input type="radio" id="book-7-qty-1" name="book-7-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-7-qty-2" name="book-7-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-7-qty-3" name="book-7-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-7-qty-4" name="book-7-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-7-qty-5" name="book-7-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">1250 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-7" class="sr-only cart-book" name="books[]" value="Благословение небожителей — 1250 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-7" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-7-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-7-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-7-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-7-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-7-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-7-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-7-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-7-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--8" data-category="danmei">
+            <div class="book-card__cover">
+              <img src="images/8.webp" alt="Обложка: Система спаси-себя-сам" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Даньмэй</span>
+              <h3 class="book-card__title">Система «спаси-себя-сам» для главного злодея</h3>
+              <p class="book-card__author">Мосян Тунсю</p>
+              <p class="book-card__desc">Читатель попадает в тело злодея Шэнь Цинцю и должен изменить сюжет, чтобы выжить и не погибнуть от руки ученика.</p>
+            <input type="radio" id="book-8-qty-1" name="book-8-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-8-qty-2" name="book-8-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-8-qty-3" name="book-8-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-8-qty-4" name="book-8-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-8-qty-5" name="book-8-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">980 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-8" class="sr-only cart-book" name="books[]" value="Система «спаси-себя-сам» для главного злодея — 980 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-8" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-8-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-8-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-8-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-8-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-8-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-8-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-8-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-8-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--9" data-category="sanxia">
+            <div class="book-card__cover">
+              <img src="images/9.webp" alt="Обложка: Легенда о Чжаояо" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Санься</span>
+              <h3 class="book-card__title">Легенда о Чжаояо</h3>
+              <p class="book-card__author">Цзюлу Фэйсян</p>
+              <p class="book-card__desc">Демоница Лу Чжаояо вселяется в новое тело и возвращается в школу, чтобы отомстить стражу, лишившему её жизни.</p>
+            <input type="radio" id="book-9-qty-1" name="book-9-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-9-qty-2" name="book-9-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-9-qty-3" name="book-9-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-9-qty-4" name="book-9-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-9-qty-5" name="book-9-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">890 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-9" class="sr-only cart-book" name="books[]" value="Легенда о Чжаояо — 890 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-9" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-9-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-9-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-9-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-9-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-9-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-9-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-9-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-9-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--10" data-category="sanxia">
+            <div class="book-card__cover">
+              <img src="images/10.webp" alt="Обложка: Ныряя в синеву небес" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Санься</span>
+              <h3 class="book-card__title">Ныряя в синеву небес</h3>
+              <p class="book-card__author">Ринга Ли</p>
+              <p class="book-card__desc">Сянься-роман о внутреннем росте героя, выборе и отношениях в мире, где небеса делятся на три царства.</p>
+            <input type="radio" id="book-10-qty-1" name="book-10-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-10-qty-2" name="book-10-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-10-qty-3" name="book-10-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-10-qty-4" name="book-10-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-10-qty-5" name="book-10-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">950 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-10" class="sr-only cart-book" name="books[]" value="Ныряя в синеву небес — 950 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-10" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-10-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-10-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-10-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-10-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-10-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-10-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-10-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-10-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--11" data-category="sanxia">
+            <div class="book-card__cover">
+              <img src="images/11.webp" alt="Обложка: Светлый пепел луны" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Санься</span>
+              <h3 class="book-card__title">Светлый пепел луны</h3>
+              <p class="book-card__author">Тэнло Вэйчжи</p>
+              <p class="book-card__desc">Ли Сусу отправляется в прошлое, чтобы уничтожить будущего повелителя демонов — и обнаруживает, что он её муж.</p>
+            <input type="radio" id="book-11-qty-1" name="book-11-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-11-qty-2" name="book-11-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-11-qty-3" name="book-11-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-11-qty-4" name="book-11-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-11-qty-5" name="book-11-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">920 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-11" class="sr-only cart-book" name="books[]" value="Светлый пепел луны — 920 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-11" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-11-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-11-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-11-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-11-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-11-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-11-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-11-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-11-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--12" data-category="sanxia">
+            <div class="book-card__cover">
+              <img src="images/12.webp" alt="Обложка: Разлука орхидеи и повелителя демонов" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Санься</span>
+              <h3 class="book-card__title">Разлука орхидеи и повелителя демонов</h3>
+              <p class="book-card__author">Цзюлу Фэйсян</p>
+              <p class="book-card__desc">Небесная фея и древний повелитель демонов меняются телами и оказываются втянуты в запретную историю любви и мести.</p>
+            <input type="radio" id="book-12-qty-1" name="book-12-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-12-qty-2" name="book-12-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-12-qty-3" name="book-12-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-12-qty-4" name="book-12-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-12-qty-5" name="book-12-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">870 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-12" class="sr-only cart-book" name="books[]" value="Разлука орхидеи и повелителя демонов — 870 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-12" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-12-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-12-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-12-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-12-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-12-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-12-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-12-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-12-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--13" data-category="wuxia">
+            <div class="book-card__cover">
+              <img src="images/13.webp" alt="Обложка: Да будет ночь" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Уся</span>
+              <h3 class="book-card__title">Да будет ночь</h3>
+              <p class="book-card__author">Мао Ни</p>
+              <p class="book-card__desc">Юный лучник Нин Цуэ ведёт дочь императора в столицу, пока над империей сгущается пророческая Вечная ночь.</p>
+            <input type="radio" id="book-13-qty-1" name="book-13-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-13-qty-2" name="book-13-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-13-qty-3" name="book-13-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-13-qty-4" name="book-13-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-13-qty-5" name="book-13-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">990 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-13" class="sr-only cart-book" name="books[]" value="Да будет ночь — 990 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-13" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-13-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-13-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-13-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-13-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-13-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-13-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-13-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-13-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--14" data-category="wuxia">
+            <div class="book-card__cover">
+              <img src="images/14.webp" alt="Обложка: Книга и меч" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Уся</span>
+              <h3 class="book-card__title">Книга и меч</h3>
+              <p class="book-card__author">Цзинь Юн</p>
+              <p class="book-card__desc">Классическое уся о ордене Красного цветка, борьбе с династией Цин и возвращении священного Корана племени.</p>
+            <input type="radio" id="book-14-qty-1" name="book-14-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-14-qty-2" name="book-14-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-14-qty-3" name="book-14-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-14-qty-4" name="book-14-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-14-qty-5" name="book-14-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">1050 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-14" class="sr-only cart-book" name="books[]" value="Книга и меч — 1050 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-14" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-14-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-14-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-14-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-14-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-14-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-14-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-14-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-14-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--15" data-category="wuxia">
+            <div class="book-card__cover">
+              <img src="images/15.webp" alt="Обложка: Синий шепот" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Уся</span>
+              <h3 class="book-card__title">Синий шепот</h3>
+              <p class="book-card__author">Цзюлу Фэйсян</p>
+              <p class="book-card__desc">Покорительница демонов Цзи Юньхэ мечтает о свободе, но встреча с пленённым тритоном меняет её судьбу.</p>
+            <input type="radio" id="book-15-qty-1" name="book-15-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-15-qty-2" name="book-15-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-15-qty-3" name="book-15-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-15-qty-4" name="book-15-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-15-qty-5" name="book-15-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">880 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-15" class="sr-only cart-book" name="books[]" value="Синий шепот — 880 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-15" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-15-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-15-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-15-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-15-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-15-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-15-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-15-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-15-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="book-card book-card--16" data-category="wuxia">
+            <div class="book-card__cover">
+              <img src="images/16.webp" alt="Обложка: Сияние полуночи" loading="lazy" width="160" height="240">
+            </div>
+            <div class="book-card__body">
+              <span class="book-card__category">Уся</span>
+              <h3 class="book-card__title">Сияние полуночи</h3>
+              <p class="book-card__author">Алиса Жданова</p>
+              <p class="book-card__desc">Ученица клана Белого лотоса под видом юноши проникает в клан Воздуха, чтобы найти амулет и предотвратить катастрофу.</p>
+            <input type="radio" id="book-16-qty-1" name="book-16-qty" class="sr-only book-qty" value="1" checked>
+            <input type="radio" id="book-16-qty-2" name="book-16-qty" class="sr-only book-qty" value="2">
+            <input type="radio" id="book-16-qty-3" name="book-16-qty" class="sr-only book-qty" value="3">
+            <input type="radio" id="book-16-qty-4" name="book-16-qty" class="sr-only book-qty" value="4">
+            <input type="radio" id="book-16-qty-5" name="book-16-qty" class="sr-only book-qty" value="5">
+              <div class="book-card__footer">
+                <span class="book-card__price">910 ₽</span>
+                <label class="book-card__btn book-card__btn--add"><input type="checkbox" id="book-16" class="sr-only cart-book" name="books[]" value="Сияние полуночи — 910 ₽" form="orderForm">В корзину</label>
+                <div class="book-card__qty" aria-label="Количество">
+                  <label for="book-16" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-1">−</label>
+                  <label for="book-16-qty-1" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-2">−</label>
+                  <label for="book-16-qty-2" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-3">−</label>
+                  <label for="book-16-qty-3" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-4">−</label>
+                  <label for="book-16-qty-4" class="book-card__qty-btn book-card__qty-btn--down book-card__qty-btn--from-5">−</label>
+                  <span class="book-card__qty-value" aria-live="polite"></span>
+                  <label for="book-16-qty-2" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-1">+</label>
+                  <label for="book-16-qty-3" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-2">+</label>
+                  <label for="book-16-qty-4" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-3">+</label>
+                  <label for="book-16-qty-5" class="book-card__qty-btn book-card__qty-btn--up book-card__qty-btn--from-4">+</label>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider divider--light" aria-hidden="true">
+      <span class="divider__line"></span>
+      <span class="divider__symbol">☯</span>
+      <span class="divider__line"></span>
+    </div>
+
+    <section class="steps" id="steps">
+      <div class="container">
+        <h2 class="section-title section-title--center">Как оформить заказ</h2>
+        <ol class="steps__list">
+          <li class="steps__item">
+            <span class="steps__num">1</span>
+            <h3>Выберите книги</h3>
+            <p>Просмотрите каталог, отфильтруйте по жанру и добавьте понравившиеся издания в корзину.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num">2</span>
+            <h3>Оформите заказ</h3>
+            <p>Укажите контакты, проверьте состав корзины и отправьте заявку.</p>
+          </li>
+          <li class="steps__item">
+            <span class="steps__num">3</span>
+            <h3>Получите книги</h3>
+            <p>Мы свяжемся для подтверждения и отправим заказ или подготовим к самовывозу.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="container">
+        <h2 class="section-title section-title--center">Наша команда</h2>
+        <div class="team__grid">
+          <article class="team-card">
+            <div class="team-card__avatar team-card__avatar--1">李</div>
+            <h3>Ли Мин</h3>
+            <p class="team-card__role">Основатель</p>
+            <p>10 лет изучает китайскую классику. Лично отбирает каждое издание в каталоге.</p>
+          </article>
+          <article class="team-card">
+            <div class="team-card__avatar team-card__avatar--2">王</div>
+            <h3>Ван Сяо</h3>
+            <p class="team-card__role">Переводчик</p>
+            <p>Специализируется на современном уся и даньмэй. Автор нескольких авторских переводов.</p>
+          </article>
+          <article class="team-card">
+            <div class="team-card__avatar team-card__avatar--3">陈</div>
+            <h3>Чэнь Анна</h3>
+            <p class="team-card__role">Менеджер заказов</p>
+            <p>Помогает с подбором книг и следит за доставкой. Всегда на связи в рабочие часы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">
+      <span class="divider__symbol">☯</span>
+    </div>
+
+    <section class="order-section" id="order">
+      <div class="container order-section__inner">
+        <h2 class="section-title">Оформить заказ</h2>
+        <form class="order-form" id="orderForm" action="mailto:samoylenko.angelina.06@mail.ru" method="get" enctype="text/plain">
+          <div class="order-form__row">
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="Имя" required placeholder="Ваше имя">
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="Телефон" required placeholder="+7 (___) ___-__-__">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required placeholder="email@example.com">
+          </div>
+          <div class="form-group">
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="Комментарий" rows="3" placeholder="Пожелания к доставке"></textarea>
+          </div>
+          <div class="order-summary">
+            <p class="order-summary__empty">Корзина пуста. Добавьте книги из каталога.</p>
+            <div class="order-summary__item order-summary__item--1">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Сунь-Цзы. Искусство войны</span>
+                <span class="order-summary__meta"><span class="order-summary__price">690 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-1" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--2">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Кунг-фу. Формы Шоу-дао. Истоки искусства ниндзя</span>
+                <span class="order-summary__meta"><span class="order-summary__price">780 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-2" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--3">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Боевое искусство Шаолиня</span>
+                <span class="order-summary__meta"><span class="order-summary__price">850 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-3" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--4">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Оружие Китая</span>
+                <span class="order-summary__meta"><span class="order-summary__price">720 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-4" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--5">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Хаски и его учитель белый кот</span>
+                <span class="order-summary__meta"><span class="order-summary__price">1100 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-5" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--6">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Основатель темного пути</span>
+                <span class="order-summary__meta"><span class="order-summary__price">1190 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-6" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--7">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Благословение небожителей</span>
+                <span class="order-summary__meta"><span class="order-summary__price">1250 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-7" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--8">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Система «спаси-себя-сам» для главного злодея</span>
+                <span class="order-summary__meta"><span class="order-summary__price">980 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-8" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--9">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Легенда о Чжаояо</span>
+                <span class="order-summary__meta"><span class="order-summary__price">890 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-9" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--10">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Ныряя в синеву небес</span>
+                <span class="order-summary__meta"><span class="order-summary__price">950 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-10" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--11">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Светлый пепел луны</span>
+                <span class="order-summary__meta"><span class="order-summary__price">920 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-11" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--12">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Разлука орхидеи и повелителя демонов</span>
+                <span class="order-summary__meta"><span class="order-summary__price">870 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-12" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--13">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Да будет ночь</span>
+                <span class="order-summary__meta"><span class="order-summary__price">990 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-13" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--14">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Книга и меч</span>
+                <span class="order-summary__meta"><span class="order-summary__price">1050 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-14" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--15">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Синий шепот</span>
+                <span class="order-summary__meta"><span class="order-summary__price">880 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-15" class="order-summary__remove">Удалить</label>
+            </div>
+            <div class="order-summary__item order-summary__item--16">
+              <div class="order-summary__info">
+                <span class="order-summary__title">Сияние полуночи</span>
+                <span class="order-summary__meta"><span class="order-summary__price">910 ₽</span><span class="order-summary__count"></span></span>
+              </div>
+              <label for="book-16" class="order-summary__remove">Удалить</label>
+            </div>
+            <p class="order-summary__note">Итоговую сумму уточнит менеджер после получения заявки.</p>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full order-submit-btn" id="submitBtn">Отправить заказ</button>
+          <label for="order-error-open" class="btn btn--primary btn--full order-error-trigger">Отправить заказ</label>
+        </form>
+      </div>
+    </section>
+
+
+    <section class="contacts" id="contacts">
+      <div class="container contacts__inner">
+        <div class="contacts__info">
+          <h2 class="section-title">Контакты</h2>
+          <ul class="contacts__list">
+            <li><strong>Адрес:</strong> г. Москва, ул. Солнечная, 60</li>
+            <li><strong>Телефон:</strong> <a href="tel:+79628668675">+7 (962) 866-86-75</a></li>
+            <li><strong>Email:</strong> <a href="mailto:samoylenko.angelina.06@mail.ru">samoylenko.angelina.06@mail.ru</a></li>
+            <li><strong>Часы работы:</strong> Пн–Сб 10:00–20:00, Вс 11:00–18:00</li>
+          </ul>
+          <div class="social" aria-label="Социальные сети">
+            <a href="https://vk.com/evildevilqueen" class="social__link social__link--vk" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">VK</a>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe
+            title="Карта — Инь-Янь, ул. Солнечная, 60"
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Aplaceholder&amp;lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;ll=44.608230&amp;z=16&amp;pt=40.143500%2C55.755800%2Cpm2rdm"
+            width="100%"
+            height="320"
+            frameborder="0"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+          <p class="contacts__map-caption">г. Москва, ул. Солнечная, 60 — книжный магазин «Инь-Янь»</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__text">Инь-Янь</span>
+        <p>Книги Китая — уся, даньмэй, санья, боевые искусства</p>
+      </div>
+      <nav class="footer__nav" aria-label="Меню в подвале">
+        <a href="#catalog">Каталог</a>
+        <a href="#order">Заказ</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="footer__social social">
+        <a href="https://vk.com" class="social__link social__link--vk" target="_blank" rel="noopener noreferrer" aria-label="ВКонтакте">VK</a>
+
+      </div>
+      <p class="footer__copy">&copy; 2026 Инь-Янь.</p>
+    </div>
+  </footer>
+
+  <aside class="cart-panel" aria-label="Корзина">
+    <div class="cart-panel__header">
+      <h2 class="cart-panel__title">Корзина</h2>
+      <label for="cart-panel-open" class="cart-panel__close" aria-label="Закрыть корзину">&times;</label>
+    </div>
+    <div class="cart-panel__body">
+      <p class="cart-panel__empty">Корзина пуста</p>
+            <div class="cart-item cart-item--1">
+        <p class="cart-item__title">Сунь-Цзы. Искусство войны</p>
+        <p class="cart-item__meta"><span class="cart-item__price">690 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-1" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--2">
+        <p class="cart-item__title">Кунг-фу. Формы Шоу-дао. Истоки искусства ниндзя</p>
+        <p class="cart-item__meta"><span class="cart-item__price">780 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-2" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--3">
+        <p class="cart-item__title">Боевое искусство Шаолиня</p>
+        <p class="cart-item__meta"><span class="cart-item__price">850 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-3" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--4">
+        <p class="cart-item__title">Оружие Китая</p>
+        <p class="cart-item__meta"><span class="cart-item__price">720 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-4" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--5">
+        <p class="cart-item__title">Хаски и его учитель белый кот</p>
+        <p class="cart-item__meta"><span class="cart-item__price">1100 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-5" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--6">
+        <p class="cart-item__title">Основатель темного пути</p>
+        <p class="cart-item__meta"><span class="cart-item__price">1190 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-6" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--7">
+        <p class="cart-item__title">Благословение небожителей</p>
+        <p class="cart-item__meta"><span class="cart-item__price">1250 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-7" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--8">
+        <p class="cart-item__title">Система «спаси-себя-сам» для главного злодея</p>
+        <p class="cart-item__meta"><span class="cart-item__price">980 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-8" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--9">
+        <p class="cart-item__title">Легенда о Чжаояо</p>
+        <p class="cart-item__meta"><span class="cart-item__price">890 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-9" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--10">
+        <p class="cart-item__title">Ныряя в синеву небес</p>
+        <p class="cart-item__meta"><span class="cart-item__price">950 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-10" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--11">
+        <p class="cart-item__title">Светлый пепел луны</p>
+        <p class="cart-item__meta"><span class="cart-item__price">920 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-11" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--12">
+        <p class="cart-item__title">Разлука орхидеи и повелителя демонов</p>
+        <p class="cart-item__meta"><span class="cart-item__price">870 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-12" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--13">
+        <p class="cart-item__title">Да будет ночь</p>
+        <p class="cart-item__meta"><span class="cart-item__price">990 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-13" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--14">
+        <p class="cart-item__title">Книга и меч</p>
+        <p class="cart-item__meta"><span class="cart-item__price">1050 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-14" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--15">
+        <p class="cart-item__title">Синий шепот</p>
+        <p class="cart-item__meta"><span class="cart-item__price">880 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-15" class="cart-item__remove">Удалить</label>
+      </div>
+      <div class="cart-item cart-item--16">
+        <p class="cart-item__title">Сияние полуночи</p>
+        <p class="cart-item__meta"><span class="cart-item__price">910 ₽</span><span class="cart-item__count"></span></p>
+        <label for="book-16" class="cart-item__remove">Удалить</label>
+      </div>
+</div>
+    <div class="cart-panel__footer">
+      <p class="cart-panel__note">Итоговую сумму уточнит менеджер.</p>
+      <label for="cart-panel-open" class="btn btn--outline btn--full cart-panel__close-btn">Закрыть</label>
+      <a href="#order" class="btn btn--primary btn--full">Оформить заказ</a>
+    </div>
+  </aside>
+  <label for="cart-panel-open" class="overlay" aria-hidden="true"></label>
+
+  <input type="checkbox" id="order-error-open" class="sr-only" aria-hidden="true">
+
+  <div class="order-result order-result--error" aria-live="polite">
+    <label for="order-error-open" class="order-result__backdrop" aria-hidden="true"></label>
+    <div class="order-result__box" role="alertdialog" aria-labelledby="orderErrorTitle">
+      <p class="order-result__title" id="orderErrorTitle">Не удалось отправить заказ</p>
+      <p class="order-result__text">Добавьте книги в корзину перед отправкой заказа.</p>
+      <label for="order-error-open" class="btn btn--primary btn--full">OK</label>
+    </div>
+  </div>
+</body>
+</html>
